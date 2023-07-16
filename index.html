@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <h1 style="font-family: 'Courier New', Courier, monospace;">Piano</h1>
+    <h1 style="font-family: 'Courier New', Courier, monospace;">Toque o piano usando as letras que se seguem:</h1>
+    <marquee style="font-family: 'Courier New', Courier, monospace;" behavior="" direction="">{A} {S} {D} {F} {G} {H} {J} {K}{L} {Z} {X} {C} {V} {B} {N} {M},</marquee>
+    <div id="mesa">
+        <div id="piano-mesa" class="keys">
+            <li>
+                <div class="branca key" data-key="65" ></div>
+                <div class="preta key afiada" data-key="83"></div>
+            </li>
+            <li>            
+                <div class="branca key" data-key="68"></div>
+                <div class="preta key afiada" data-key="70"></div>
+            </li>
+            <li>
+                <div class="branca key" data-key="71"></div>
+            </li>
+            <li>
+                <div class="branca key" data-key="72"></div>
+                <div class="preta key afiada" data-key="74"></div>
+            </li>
+
+            <li>
+                <div class="branca key" data-key="75"></div>
+                <div class="preta key afiada" data-key="76"></div>
+            </li>
+            <li>
+                <div class="branca key" data-key="90"></div>    
+                <div class="preta key afiada" data-key="88"></div>
+            </li>
+
+            <li>
+                <div class="branca key" data-key="67"></div>
+            </li>
+
+            <li>
+                <div class="branca key" data-key="86"></div>                        
+                <div class="preta key afiada" data-key="66"></div>
+            </li>
+
+            <li>        
+                <div class="branca key" data-key="78"></div>
+                <div class="preta key afiada" data-key="77"></div>
+            </li>
+            <li>
+                <div class="branca key" data-key="188"></div>
+            </li>
+        </div>
+    </div>
+
+    <section class="Som">
+
+        <audio data-key="65" src="son/50.mp3"></audio>
+        <audio data-key="83" src="son/51.mp3"></audio>
+        <audio data-key="68" src="son/52.mp3"></audio>
+        <audio data-key="70" src="son/53.mp3"></audio>
+        <audio data-key="71" src="son/54.mp3"></audio>
+        <audio data-key="72" src="son/55.mp3"></audio>
+        <audio data-key="74" src="son/56.mp3"></audio>
+        <audio data-key="75" src="son/57.mp3"></audio>
+        <audio data-key="76" src="son/58.mp3"></audio>
+        <audio data-key="90" src="son/59.mp3"></audio>
+        <audio data-key="88" src="son/60.mp3"></audio>
+        <audio data-key="67" src="son/61.mp3"></audio>
+        <audio data-key="86" src="son/62.mp3"></audio>
+        <audio data-key="66" src="son/63.mp3"></audio>
+        <audio data-key="78" src="son/64.mp3"></audio>
+        <audio data-key="77" src="son/65.mp3"></audio>
+        <audio data-key="188" src="son/66.mp3"></audio>
+
+    </section>
+
+    <script src="piano.js"></script>
+</body>
+</html>
